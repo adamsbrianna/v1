@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://eee.com/"
+baseURL = "http://adamsbrianna.github.io/v1/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
