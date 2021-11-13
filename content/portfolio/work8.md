@@ -1,14 +1,31 @@
 +++
 showonlyimage = false
 draft = false
-image = "img/portfolio/ipad-air-2.jpg"
-date = "2016-11-05T19:59:22+05:30"
-title = "Name of the work 8"
+image = "img/portfolio/adventure.jpg"
+date = "2021-11-05T19:59:22+05:30"
+title = "Adventure Game"
 weight = 8
 +++
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 <!--more-->
+
+In this assignment and the next, you will develop a text adventure game (TAG), also known as interactive fiction. The characteristic elements of TAGs include gameplay driven by exploration and puzzle-solving, and a text-based interface in which users type natural-language commands and the game responds with text. The seminal work in this genre is the Colossal Cave Adventure, which you can play online.
+
+In A2, every team will build the same, specified part of the game: exploration of a map. In A3, your team will have the opportunity to make your game unique by extending your A2 solution with functionality of your own choice.
+
+You will actually implement not just a single game, but a game engine that could be used to play many adventures. The game engine is an OCaml program that implements the gameplay and user interface. An adventure is a data file that is input by the game engine and describes a particular gaming experience: exploring a cave, hitchhiking on a spaceship, finding the missing pages of a powerful magical book, etc. This factoring of responsibility between the engine and input file is known as data driven design in games.
+
+Implement and test a couple OCaml modules; and work with a development team.
+
+Objectives:
+
+    Design your own data types.
+    Work with lists and trees.
+    Use pattern matching and higher-order functions.
+    Read information from files, and interact with the user.
+    Learn about JSON, a widely-used data format.
+
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 
