@@ -1,11 +1,22 @@
 +++
-image = "img/portfolio/gravity-paper.jpg"
+image = "img/portfolio/gravity-paper.png"
 showonlyimage = false
-date = "2016-11-05T19:44:32+05:30"
-title = "Name of the work 3"
+date = "2021-11-05T19:44:32+05:30"
+title = "Crossword Puzzle Solver"
 draft = false
 weight = 2
 +++
+
+{{< rawhtml >}} 
+
+<video controls width=100%>
+    <source src="*/videos/crossword.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+{{< /rawhtml >}}
+
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 <!--more-->
