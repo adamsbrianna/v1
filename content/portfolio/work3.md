@@ -7,7 +7,7 @@ draft = false
 weight = 2
 +++
 
-![](crossword_video.mov)
+{{< video src="crossword_video.mp4" controls="yes" >}}
 
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 <!--more-->
