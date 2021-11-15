@@ -1,9 +1,9 @@
 +++
 draft = false
-image = "img/portfolio/trifold.jpg"
+image = "images/portfolio/item-7.png"
 showonlyimage = true
-date = "2016-11-05T20:22:08+05:30"
-title = "Item with image"
+date = "2021-11-05T20:22:08+05:30"
+title = "Film Photography"
 weight = 10
 +++
 

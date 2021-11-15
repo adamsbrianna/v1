@@ -28,3 +28,7 @@ anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volupta
 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
 dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+
+![image alt text](/001.jpg)
+<img src="/img/portfolio/001.jpg" alt="demo" class="img-responsive">
+<img src="/img/portfolio/002.jpg" alt="demo" class="img-responsive">
