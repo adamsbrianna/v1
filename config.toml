@@ -1,4 +1,5 @@
 baseurl = "https://adamsbrianna.github.io/v1/"
+canonifyurls = true
 title = "Brianna Adams"
 theme = ["hugo-video", "hugo-creative-portfolio-theme"]
 languageCode = "en-us"

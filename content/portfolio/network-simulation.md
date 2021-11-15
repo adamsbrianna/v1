@@ -7,36 +7,32 @@ title = "Network Simulation"
 weight = 0
 +++
 
+
 text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 <!--more-->
 
-![Example image](/static/img/portfolio/packet-switching.png)
-<section id="categories" markdown="1">
 
-A list of categories:
+{{< rawhtml >}} 
 
-- foo
-- bar
-<img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
-</section>
+<video controls width=100%>
+    <source src="/videos/simulation1.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 
-<div id="html" markdown="0">
-<img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
-<h1>HTML part</h1>
+{{< /rawhtml >}}
 
-  <ul>
-  <img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
-    <li>Foo</li>
-    <li>Bar</li>
-  </ul>
+e necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 
-</div>
-<html>
-<head>
-    <img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
-</head>
+{{< rawhtml >}} 
 
+<video controls width=100%>
+    <source src="/videos/simulation2.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 
+{{< /rawhtml >}}
 
 e necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 

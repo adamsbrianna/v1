@@ -10,6 +10,16 @@ weight = 8
 Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 <!--more-->
 
+{{< rawhtml >}} 
+
+<video controls width=100%>
+    <source src="/videos/crossword.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+{{< /rawhtml >}}
+
 In this assignment and the next, you will develop a text adventure game (TAG), also known as interactive fiction. The characteristic elements of TAGs include gameplay driven by exploration and puzzle-solving, and a text-based interface in which users type natural-language commands and the game responds with text. The seminal work in this genre is the Colossal Cave Adventure, which you can play online.
 
 In A2, every team will build the same, specified part of the game: exploration of a map. In A3, your team will have the opportunity to make your game unique by extending your A2 solution with functionality of your own choice.

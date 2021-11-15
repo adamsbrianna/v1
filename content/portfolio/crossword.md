@@ -14,7 +14,7 @@ Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 {{< rawhtml >}} 
 
 <video controls width=100%>
-    <source src="*/videos/crossword.mp4"
+    <source src="/videos/crossword.mp4"
             type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
