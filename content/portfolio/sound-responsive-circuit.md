@@ -13,6 +13,15 @@ Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
 <!--more-->
 
+{{< rawhtml >}} 
+
+<video controls width=100%>
+    <source src="/videos/1.2.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+{{< /rawhtml >}}
 
 
 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
