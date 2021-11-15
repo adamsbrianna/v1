@@ -1,5 +1,5 @@
 +++
-image = "img/portfolio/label-clothes.jpg"
+image = "img/portfolio/pollack.png"
 showonlyimage = false
 date = "2016-11-05T19:57:40+05:30"
 title = "Name of the work 7"
@@ -29,3 +29,19 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 * Aliquam tincidunt mauris eu risus.
 
 When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
+
+
+The assignment has two phases;
+
+1.Finding for the Orb during the first phase
+
+On the way to the Orb, the layout of the cavern is unknown. Pres Pollack knows only the status of the tile on which she is standing and the immediately surrounding ones. Her goal is to make it to the Orb in as few steps as possible.
+This can be used greedily to optimize the find algorithm, but the greediness does not always work
+
+2. Collecting gold during the scram phase
+
+The stress of the moving walls has compromised the integrity of the cavern, beginning a step limit after
+which the ceiling will collapse. The goal of the scram phase is to run to the exit from the cavern before it collapses
+
+In this assignment, you will help Cornell President Martha Pollack find the Orb of AI in a just-discovered
+cavern under Gates Hall.
