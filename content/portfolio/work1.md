@@ -1,5 +1,5 @@
 +++
-showonlyimage = true
+showonlyimage = false
 draft = false
 image = "img/portfolio/packet-switching.png"
 date = "2021-11-05T18:25:22+05:30"
@@ -9,6 +9,34 @@ weight = 0
 
 text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 <!--more-->
+
+![Example image](/static/img/portfolio/packet-switching.png)
+<section id="categories" markdown="1">
+
+A list of categories:
+
+- foo
+- bar
+<img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
+</section>
+
+<div id="html" markdown="0">
+<img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
+<h1>HTML part</h1>
+
+  <ul>
+  <img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
+    <li>Foo</li>
+    <li>Bar</li>
+  </ul>
+
+</div>
+<html>
+<head>
+    <img src="img/portfolio/packet-switching.png" alt="Italian Trulli">
+</head>
+
+
 
 e necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 
