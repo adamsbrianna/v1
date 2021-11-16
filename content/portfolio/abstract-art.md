@@ -7,7 +7,7 @@ title = "Abstract Art"
 weight = 10
 +++
 
-15 x 11" ea. Medium: watercolor,sumi ink, somerset paper
+15 x 11" ea. Medium: watercolor, sumi ink, somerset paper
 
 {{< rawhtml >}} 
 
