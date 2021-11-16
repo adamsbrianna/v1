@@ -1,0 +1,175 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Brianna Adams</title>
+<meta name=description content="Describe your website">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/bootstrap.min.css>
+<link rel=stylesheet href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/font-awesome.min.css>
+<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.carousel.css>
+<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.theme.css>
+<link href=https://adamsbrianna.github.io/v1/css/style.blue.css rel=stylesheet id=theme-stylesheet><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
+<link href=https://adamsbrianna.github.io/v1/css/custom.css rel=stylesheet>
+<link rel="shortcut icon" href=https://adamsbrianna.github.io/v1/img/favicon.png>
+</head>
+<body>
+<div id=all>
+<div class=container-fluid>
+<div class="row row-offcanvas row-offcanvas-left">
+<div id=sidebar class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+<div class=sidebar-content>
+<h1 class=sidebar-heading><a href=https://adamsbrianna.github.io/v1/>Brianna Adams</a></h1>
+<p class=sidebar-p>Hi there! I am a software engineer and creative illustrator pursing my undergraduate degree.</p>
+<p class=sidebar-p>Originally from Virginia, currently based in Ithaca.</p>
+<ul class=sidebar-menu>
+<li><a href=https://adamsbrianna.github.io/v1/portfolio/>Home</a></li>
+<li><a href=https://adamsbrianna.github.io/v1/about/>About</a></li>
+<li><a href=https://adamsbrianna.github.io/v1/contact/>Get in touch</a></li>
+</ul>
+<p class=social>
+<a href=mailto:bja49@cornell.edu data-animate-hover=pulse class=email title=E-mail>
+<i class="fa fa-envelope"></i>
+</a>
+<a href=https://www.linkedin.com/in/adams-brianna/ data-animate-hover=pulse class=external title=LinkedIn>
+<i class="fa fa-linkedin"></i>
+</a>
+<a href=https://github.com/adamsbrianna data-animate-hover=pulse class=external title=GitHub>
+<i class="fa fa-github"></i>
+</a>
+<a href=full%20profile%20url%20in%20gitlab data-animate-hover=pulse class=external title=GitLab>
+<i class="fa fa-gitlab"></i>
+</a>
+</p>
+<div class=copyright>
+<p class=credit>
+&copy;2021 Brianna Adams |
+Template by <a href=https://bootstrapious.com/free-templates class=external>Bootstrapious.com</a>
+& ported to Hugo by <a href=https://github.com/kishaningithub>Kishan B</a>
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+<div class="small-navbar visible-xs">
+<button type=button data-toggle=offcanvas class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+<h1 class=small-navbar-heading><a href=https://adamsbrianna.github.io/v1/>Brianna Adams</a></h1>
+</div>
+<div class=row>
+<div class=col-lg-8>
+<div class=content-column-content>
+<h1>Shallow Water Simulation</h1>
+<img src=https://adamsbrianna.github.io/v1/img/portfolio/dam_break.gif style=max-width:100%>
+<p>The purpose of this project is to improve the performance of a shallow water simulation. This project consists of three parts; the first two involve a parallelization of the code with OpenMP and a scaling study to evaluate the performance with varying numbers of processors and problem sizes. Finally, the code is profiled and tuned to optimize the simulation even further. With these efforts we are able to reduce the execution time, for a problem size of 1000, from 70.23s to 2.22s - a speedup of 31.6.</p>
+<p>You are provided with a (partially tuned) reference implementations of a finite volume solver for 2D hyperbolic PDEs. The most performance critical components are in modules called stepper (the generic central finite volume scheme) and shallow2d (which defines flux functions that govern the physics of the shallow water equations). In addition, there is a Lua-based driver that runs the code on various test problems (in tests.lua) and a visualization script (under util/visualization.py that produces movies and pretty pictures from the simulation outputs).</p>
+<p>For this assignment, you should attempt three tasks:</p>
+<pre><code>Parallelization: You should parallelize your code using either MPI or OpenMP. You may try both if you have time.
+
+Scaling study: You should run strong and weak scaling studies analyses on Graphite and/or Comet.
+
+Profiling and tuning: Using either profiling tools or manual instrumentation, look for bottlenecks in the code. Your goal is to get the implementation to run as quickly as possible. This may involve a domain decomposition (useful even in the serial case, as we have seen); it may involve vectorization of the computational kernels; or it may involve eliminating redundant computations. Note that I have already done some serial tuning, so higher-level optimizations (time step batching, blocking) are likely to be more effective than low-level tuning for vectorization.
+</code></pre>
+<p>The primary deliverable for your project is a report that describes your performance experiments and attempts at tuning, along with what you learned about things that did or did not work. Good things for the report include:</p>
+<pre><code>Profiling results
+Speedup plots and scaled speedup plots
+Performance models that predict speedup
+</code></pre>
+<p>In addition, you should also provide the code, and ideally scripts that make it simple to reproduce any performance experiments you&rsquo;ve run.</p>
+<p>In an 2006 report on &ldquo;The Landscape of Parallel Computing&rdquo;, a group of parallel computing researchers at Berkeley suggested that high-performance computing platforms be evaluated with respect to &ldquo;13 dwarfs&rdquo; &ndash; frequently recurring computational patterns in high-performance scientific code. This assignment represents the fifth dwarf on the list: structured grid computations. Structured grid computations feature high spatial locality and allow regular access patterns. They are, in principle, one of the easier types of computations to parallelize.</p>
+<p>Structured grid computations are particularly common in fluid dynamics simulations, and the code that you will tune in this assignment is an example of such a simulation. You will be optimizing and parallelizing a finite volume solver for the shallow water equations, a two-dimensional PDE system that describes waves that are very long compared to the water depth. This is an important system of equations that applies even in situations that you might not initially think of as &ldquo;shallow&rdquo;; for example, tsunami waves are long enough that they can be modeled using the shallow water equations even when traveling over mile-deep parts of oceans. There is also a very readable Wikipedia article on the shallow water equations, complete with a little animation similar to the one you will be producing. I was inspired to use this system for our assignment by reading the chapter on shallow water simulation in MATLAB from Cleve Moler&rsquo;s books on &ldquo;Experiments in MATLAB&rdquo; and then getting annoyed that he chose a method with a stability problem.</p>
+<p>Parallelization
+The parallelization of the code uses OpenMP. The problem domain is divided into subdomains and each subdomain is handled by a thread, allowing for parallel processing of the computations. The subdomains are set up in the file ldriver.c; according to the number of specified threads the domain is split up into blocks of the same size, and a struct with all the necessary information is initialized for each subdomain. The variables x_p_start and y_p_start are used to identify the starting point of the subdomain with regards to the entire domain. This initialization and preparation is done in addition to the initialization of the entire domain. Conceptually the processors are arranged on a grid of the size p_n*p_m. If the domain size is not divisible (without remainder) by the number of processors in a direction, the last processors on the grid in that direction will take on the remaining points.</p>
+<p>In order to advance the simulation the boundary conditions have to be applied on the subdomains. Two helper functions are used to achieve this; central2d_BC_block and central2d_local2global. The first function applies boundary conditions to the ghost cells of the subdomains, based on the values in the global domain. The second function is used to copy data from the subdomains back to the global domain. Since only a part of the values of a subdomain is used for ghost cells of a neighbouring subdomain, only the necessary values are copied back to the global domain. This reduces the amount of data transferred. Similarly to central2d_periodic, the actual copying of data is done via function calls to copy_subgrid.</p>
+<p>Both functions are integrated into central2d_xrun; in each step the global and then the local boundary conditions are applied. After advancing the subdomains central2d_local2global is called to update the global domain. At the end of each call to central2d_xrun the entire data of the subdomains is copied back into the global domain with another helper function, central2d_all2global.</p>
+<p>Parallelization of some of the for-loops with pragma omp parallel for was also attempted, but was not really beneficial. This is likely due to the overhead of the setup of the parallel loop outweighing the benefit of executing the iterations in parallel.
+Scaling Study
+We ran experiments on Comet to evaluate how the parallelized problem scales.<br>
+Performance Model
+The speedup plot shows an increase in speed with an increase in processors and a maximum speedup of 24.08 with 24 processors which lines up with the expectation that the speedup should be less than or equal to the number of processors. The slight variance between these values is likely negligible and stems from minute changes among running the script or overheads of managing the threads.
+Strong Scaling
+For the strong scaling study we fixed the problem size to be 1000. Using the submission script provided and updating the number of processors gives the results shown in the graphs below. The trend demonstrates a decrease in time per step as the number of processors increases. The serial time used in the speedup plot above is calculated first, before any parallelization, and the speed up plot is calculated by dividing the serial time over the values given in the plot below after parallelizing the code.</p>
+<p>Weak Scaling
+For the weak scaling study we scaled the problem size starting with a problem size of 1000 (~1,000,000 grid points per processor). The size of the entire domain for the submission script can be calculated with the formula 1000*log2(p) where p is the number of processors. The results show an increase in time per step as the number of processors increases. This could be due to overheads of managing the threads and synchronizing the subdomains. Ideally we would have added a graph of the speedup for the weak scaling, but we ran out of time to run the serial experiments - such large simulations take a long time to complete (hence the need for optimization!).</p>
+<p>Profiling and Tuning
+Profiling
+In order to evaluate the execution of the code and discover potential bottlenecks the code was profiled with gperftools and valgrind/callgrind. All of the results can be found in the folder ‘profiles’. Those profiling tools are useful because they allow for profiling of inlined functions and parallel code. The profiles are generated on Graphite since a lot of profiling tools are pre-installed. The problem size is 1000 for the gperftools profiling and 500 for callgrind, execution with valgrind is very slow and would otherwise time out (with max time = 15 min). All of the parallel profiles are run with four threads. Below is an excerpt of the gperf profile of the original, unaltered code:</p>
+<p>Total: 7353 samples
+1405 19.1% 19.1% 1405 19.1% xmin2s (inline)
+1253 17.0% 36.1% 2050 27.9% shallow2dv_flux (inline)
+914 12.4% 48.6% 1750 23.8% limited_deriv1 (inline)
+818 11.1% 59.7% 818 11.1% __nss_passwd_lookup
+807 11.0% 70.7% 1672 22.7% limited_derivk (inline)
+800 10.9% 81.6% 800 10.9% central2d_correct_sd (inline)
+525 7.1% 88.7% 2184 29.7% central2d_predict (inline)
+362 4.9% 93.6% 2925 39.8% central2d_correct (inline)
+296 4.0% 97.6% 1701 23.1% limdiff (inline)
+115 1.6% 99.2% 115 1.6% shallow2dv_speed (inline)
+17 0.2% 99.4% 17 0.2% central2d_offset
+16 0.2% 99.7% 33 0.4% solution_check
+10 0.1% 99.8% 7353 100.0% lua_close</p>
+<p>The first column shows many samples are in the corresponding function. A lot of time is spent calculating the limited derivatives (xmin2s, limited_deriv1, limited_derivk, limdiff) and the shallow2dv_flux function. This is helpful in determining which of the functions might be worth tuning.</p>
+<p>The excerpt of the callgrind profile (opened in KCachegrind) above shows the number of calls to each function in addition to the cost of each function in %. Callgrind does not seem to display inlined functions, that is why two profilers were used.
+Tuning
+We started attempting high-level optimization through batching of time steps. This involves synchronizing between subdomains after taking multiple steps, not just two. In order to end up on the main grid after computing batched timesteps the number of steps has to be even. The number of ghost cells also has to increase with the number of steps per batch. By not synchronizing every second step some of the computed values will be inaccurate, by increasing the number of ghost cells those inaccurately computed values remain within the ghost cells and do not affect the relevant values. The batching is implemented in the central2d_xrun function in stepper_batch.c. After applying the boundary conditions and computing the timestep to use over the course of the batch the number of steps for the batch is computed. This is done to ensure that the last batch does not exceed the tfinal. The computation of the actual batch of timesteps is handled in the central2d_batch function. It loops over the determined number of steps and advances the values in the subdomains. After the time batch is executed the boundary conditions for the domains are applied again.</p>
+<p>Unfortunately the batching does not lead to a reduction in execution time. The latencies for the tuning were measured on Comet because the timings seem to be more consistent there. The reference is a parallel execution with four threads and a problem size of 1000. The latency of the batched version is higher than of the unbatched version. A reason for this might be that the setup and additional function calls to the batch function cause some kind of latency, but this result was not what we expected.</p>
+<p>The profile of the batched version shows that calls to functions that maintain boundary conditions and that copy values in and out of subdomains are reduced, as expected. This can be seen in the callgrind profile which shows how often functions are called.</p>
+<p>Function Name
+Number of Function Calls
+Unbatched (~batch size = 2)
+Batched (batch size = 10)
+central2d_periodic
+615
+150
+central2d_BC_block
+2,460
+600
+speed
+2,460
+600
+central2d_local2global
+2460
+600
+memcpy_avx_unaligned
+(compiler vectorization of copy_subgrid)
+10,145,275
+4,602,571</p>
+<p>A thing to note is that the momentum values looked a little different than in the unbatched version. The generated gif looks normal, but if we had more time this is something that we would have investigated further.</p>
+<p>Vectorization is another method that we experimented with for optimization. The profiling results indicate that the functions calculating the limited derivatives might profit from tuning, so we attempted vectorization of some of the involved functions. The AVX2 intrinsics available on the Comet and Graphite nodes support 256-bit vectors, this allows for processing of eight float elements at the same time. Four functions were vectorized; xmin2s, limdiff, limited_deriv1 and limited_derivk. In order to vectorize this section of the code functions were restructured to handle eight elements at a time instead of just one (see file stepper_vec.c).
+Additionally the functions shallow2d_flux and shallow2d_speed functions were vectorized, but this did not lead to an improvement in execution time (shallow2d_vec.c).</p>
+<p>Vectorization results can be seen in the table below; limited_deriv1 and limited_derivk include vectorization of xmin2s and limmdiff. Combining the vectorization of both limited_deriv functions reduces the execution time from 13.9s to 10.6s.
+Vectorized Function
+Latency (s)
+None
+1.393004e+01
+shallow2dv_flux
+1.542821e+01
+shallow2dv_speed
+1.399195e+01
+limited_deriv1
+1.280830e+01
+limited_derivk
+1.290170e+01
+limited_deriv1 + limited_derivk
+1.059647e+01</p>
+<p>Increasing the number of threads to 24 on Comet leads to an execution time of 2.911994s without vectorization and 2.219870s with vectorization. This brings the speedup from around 24.1 to 31.6.
+Conclusion
+Through parallelisation and some vectorization we were able to drastically reduce the execution latency of the simulation. Our efforts resulted in a speedup of 31.6 for a problem of size 1000, run on comet with 24 threads. These results were in line with the speedup that we predicted in our performance model.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://adamsbrianna.github.io/v1/js/jquery.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/bootstrap.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/jquery.cookie.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/ekko-lightbox.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/jquery.scrollTo.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/masonry.pkgd.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/imagesloaded.pkgd.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/owl.carousel.min.js></script>
+<script src=https://adamsbrianna.github.io/v1/js/front.js></script>
+</body>
+</html>
