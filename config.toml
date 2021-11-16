@@ -56,7 +56,7 @@ googleAnalytics = ""
   url = "contact/"
 
   [params.social]
-  email         = "email@example.com"
-  linkedin      = "full profile url in linkedin"
-  github        = "full profile url in github"
+  email         = "bja49@cornell.edu"
+  linkedin      = "https://www.linkedin.com/in/adams-brianna/"
+  github        = "https://github.com/adamsbrianna"
   gitlab        = "full profile url in gitlab"
