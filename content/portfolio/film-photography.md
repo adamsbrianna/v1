@@ -7,7 +7,7 @@ showonlyimage = true
 weight = 9
 +++
 
-Kodax 400. canon. black and white silver gelatin.
+Medium: Gelatin silver print 
 
 <!--more-->
 
