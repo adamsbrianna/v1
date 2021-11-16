@@ -1,99 +1,133 @@
-<!doctype html><html lang=en-us>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<title>Brianna Adams</title>
-<meta name=description content="Describe your website">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/bootstrap.min.css>
-<link rel=stylesheet href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
-<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/font-awesome.min.css>
-<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.carousel.css>
-<link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.theme.css>
-<link href=https://adamsbrianna.github.io/v1/css/style.blue.css rel=stylesheet id=theme-stylesheet><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
+<!doctype html>
+<html lang=en-us>
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv=x-ua-compatible content="IE=edge">
+  <title>Brianna Adams</title>
+  <meta name=description content="Describe your website">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/bootstrap.min.css>
+  <link rel=stylesheet href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+  <link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/font-awesome.min.css>
+  <link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.carousel.css>
+  <link rel=stylesheet href=https://adamsbrianna.github.io/v1/css/owl.theme.css>
+  <link href=https://adamsbrianna.github.io/v1/css/style.blue.css rel=stylesheet id=theme-stylesheet>
+  <!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
 <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
-<link href=https://adamsbrianna.github.io/v1/css/custom.css rel=stylesheet>
-<link rel="shortcut icon" href=https://adamsbrianna.github.io/v1/img/favicon.png>
+  <link href=https://adamsbrianna.github.io/v1/css/custom.css rel=stylesheet>
+  <link rel="shortcut icon" href=https://adamsbrianna.github.io/v1/img/favicon.png>
 </head>
+
 <body>
-<div id=all>
-<div class=container-fluid>
-<div class="row row-offcanvas row-offcanvas-left">
-<div id=sidebar class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
-<div class=sidebar-content>
-<h1 class=sidebar-heading><a href=https://adamsbrianna.github.io/v1/>Brianna Adams</a></h1>
-<p class=sidebar-p>Hi there! I am a software engineer and creative illustrator pursing my undergraduate degree.</p>
-<p class=sidebar-p>Originally from Virginia, currently based in Ithaca.</p>
-<ul class=sidebar-menu>
-<li><a href=https://adamsbrianna.github.io/v1/portfolio/>Home</a></li>
-<li><a href=https://adamsbrianna.github.io/v1/about/>About</a></li>
-<li><a href=https://adamsbrianna.github.io/v1/contact/>Get in touch</a></li>
-</ul>
-<p class=social>
-<a href=https://www.linkedin.com/in/adams-brianna/ data-animate-hover=pulse class=external title=LinkedIn>
-<i class="fa fa-linkedin"></i>
-</a>
-<a href=https://github.com/adamsbrianna data-animate-hover=pulse class=external title=GitHub>
-<i class="fa fa-github"></i>
-</a>
-<a href=full%20profile%20url%20in%20gitlab data-animate-hover=pulse class=external title=GitLab>
-<i class="fa fa-gitlab"></i>
-</a>
-</p>
-<div class=copyright>
-<p class=credit>
-&copy;2021 Brianna Adams |
-Template by <a href=https://bootstrapious.com/free-templates class=external>Bootstrapious.com</a>
-& ported to Hugo by <a href=https://github.com/kishaningithub>Kishan B</a>
-</p>
-</div>
-</div>
-</div>
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-<div class="small-navbar visible-xs">
-<button type=button data-toggle=offcanvas class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-<h1 class=small-navbar-heading><a href=https://adamsbrianna.github.io/v1/>Brianna Adams</a></h1>
-</div>
-<div class=row>
-<div class=col-lg-8>
-<div class=content-column-content>
-<h1>Symbolic Algebra Package for OCaml</h1>
-<p>• Symbolic expression representation (Referred to as Expressions)
-<br>
-• Expression LATEX output option
-<br>
-• Binding and evaluation of a symbolic expression
-<br>
-• Expression simplification according to some basic heuristics
-<br>
-• Single and multi-variable derivatives
-<br>
-• Basic vector calculus</p>
-<p> &nbsp; </p>
-<p>As of when this project was created of right now there isn’t a smooth package for working
-with symbolic expressions in OCaml as Sympy handles symbolic algebra in Python. We created data structures to keep track of symbolic variables and symbolic expressions, a lexer and parser to parse PEMDAS operations and recognize possible symbol tokens, the ability to print a symbolic expression, combine two symbolic expressions to form a new expression, and simplification
-by removing common factors. In our demo, we demonstrated that a user could create symbols and expressions and that the symbol
-engine could simplify an expression by trying to gather like terms and then factor the resulting expression.</p>
-<p>Develop the beginnings of formatting and evaluating expressions and operations to strings. Write the beginnings of progress report. Develop additional test cases. Implement a basic parser and lexer using OCamlyacc, Menhir, OCamllex, and examples given
-as part of the course. Develop the beginnings of the AST and couple it with the parser and lexer. Make the tool more convenient to use and test by rebinding familiar infix operators in the Engine namespace. Copy and adapt scaffolding from previous assignments (i.e. the Makefile and configurations). Inspect all code (including code from other members), write failing test cases, and make the tests pass. Develop the beginnings of the REPL (which admittedly got seriously refactored). Develop functions to factor expressions, do numerical operations, remove redundant zeros,
-and add like terms. Develop test cases for above functions. Write script for the demo and help develop example cases</p>
-<p>Symbolic expression representation (Referred to as Expressions). Unambiguous representation of an expression. Possibly ambiguous LATEX output option (pretty-printing). Binding and evaluation of a symbolic expression. Expression simplification according to some basic heuristics. Partial derivatives. An example toplevel for others to build onto. This project is particularly useful because as of right now there isn’t a smooth package for working. with symbolic expressions in OCaml as Sympy handles symbolic algebra in Python.</p>
-<p>The engine can collect like terms in expressions, which is also useful with respect to simplification. We added some support for differentiation
-and the functions sin, cos, tan, exp, and ln. Pretty-printing doesn’t print as many unneeded parenthesis. Both textual representation of expressions and LATEX output exists. Develop additional test cases. Improve the basic parser and lexer using OCamlyacc, Menhir, OCamllex, and examples given as part of the course. Confirm that the parser and lexer work for simple and intermediate cases. Implement and test differentiation code. Implement and test new unops such as sin, cos, tan, exp, and ln. Overhaul functions to do numerical operations, remove redundant zeros, and add like terms to remove bugs and improve readability. Develop functions to determine what variables a function is dependent upon. Develop test cases for above functions. Write script for the demo and help develop example cases</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script src=https://adamsbrianna.github.io/v1/js/jquery.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/bootstrap.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/jquery.cookie.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/ekko-lightbox.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/jquery.scrollTo.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/masonry.pkgd.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/imagesloaded.pkgd.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/owl.carousel.min.js></script>
-<script src=https://adamsbrianna.github.io/v1/js/front.js></script>
+  <div id=all>
+    <div class=container-fluid>
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div id=sidebar class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+          <div class=sidebar-content>
+            <h1 class=sidebar-heading><a href=https://adamsbrianna.github.io/v1 />Brianna Adams</a></h1>
+            <p class=sidebar-p>Hi there! I am a software engineer and creative illustrator pursing my undergraduate
+              degree.</p>
+            <p class=sidebar-p>Originally from Virginia, currently based in Ithaca.</p>
+            <ul class=sidebar-menu>
+              <li><a href=https://adamsbrianna.github.io/v1/portfolio />Home</a></li>
+              <li><a href=https://adamsbrianna.github.io/v1/about />About</a></li>
+              <li><a href=https://adamsbrianna.github.io/v1/contact />Get in touch</a></li>
+            </ul>
+            <p class=social>
+              <a href=https://www.linkedin.com/in/adams-brianna/ data-animate-hover=pulse class=external title=LinkedIn>
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href=https://github.com/adamsbrianna data-animate-hover=pulse class=external title=GitHub>
+                <i class="fa fa-github"></i>
+              </a>
+              <a href=full%20profile%20url%20in%20gitlab data-animate-hover=pulse class=external title=GitLab>
+                <i class="fa fa-gitlab"></i>
+              </a>
+            </p>
+            <div class=copyright>
+              <p class=credit>
+                &copy;2021 Brianna Adams | Made with ❤️ Hugo
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+          <div class="small-navbar visible-xs">
+            <button type=button data-toggle=offcanvas class="btn btn-ghost pull-left"> <i class="fa fa-align-left">
+              </i>Menu</button>
+            <h1 class=small-navbar-heading><a href=https://adamsbrianna.github.io/v1 />Brianna Adams</a></h1>
+          </div>
+          <div class=row>
+            <div class=col-lg-8>
+              <div class=content-column-content>
+                <h1>Symbolic Algebra Package for OCaml</h1>
+                <p>• Symbolic expression representation (Referred to as Expressions)
+                  <br>
+                  • Expression LATEX output option
+                  <br>
+                  • Binding and evaluation of a symbolic expression
+                  <br>
+                  • Expression simplification according to some basic heuristics
+                  <br>
+                  • Single and multi-variable derivatives
+                  <br>
+                  • Basic vector calculus
+                </p>
+                <p> &nbsp; </p>
+                <p>As of when this project was created of right now there isn’t a smooth package for working
+                  with symbolic expressions in OCaml as Sympy handles symbolic algebra in Python. We created data
+                  structures to keep track of symbolic variables and symbolic expressions, a lexer and parser to parse
+                  PEMDAS operations and recognize possible symbol tokens, the ability to print a symbolic expression,
+                  combine two symbolic expressions to form a new expression, and simplification
+                  by removing common factors. In our demo, we demonstrated that a user could create symbols and
+                  expressions and that the symbol
+                  engine could simplify an expression by trying to gather like terms and then factor the resulting
+                  expression.</p>
+                <p>Develop the beginnings of formatting and evaluating expressions and operations to strings. Write the
+                  beginnings of progress report. Develop additional test cases. Implement a basic parser and lexer using
+                  OCamlyacc, Menhir, OCamllex, and examples given
+                  as part of the course. Develop the beginnings of the AST and couple it with the parser and lexer. Make
+                  the tool more convenient to use and test by rebinding familiar infix operators in the Engine
+                  namespace. Copy and adapt scaffolding from previous assignments (i.e. the Makefile and
+                  configurations). Inspect all code (including code from other members), write failing test cases, and
+                  make the tests pass. Develop the beginnings of the REPL (which admittedly got seriously refactored).
+                  Develop functions to factor expressions, do numerical operations, remove redundant zeros,
+                  and add like terms. Develop test cases for above functions. Write script for the demo and help develop
+                  example cases</p>
+                <p>Symbolic expression representation (Referred to as Expressions). Unambiguous representation of an
+                  expression. Possibly ambiguous LATEX output option (pretty-printing). Binding and evaluation of a
+                  symbolic expression. Expression simplification according to some basic heuristics. Partial
+                  derivatives. An example toplevel for others to build onto. This project is particularly useful because
+                  as of right now there isn’t a smooth package for working. with symbolic expressions in OCaml as Sympy
+                  handles symbolic algebra in Python.</p>
+                <p>The engine can collect like terms in expressions, which is also useful with respect to
+                  simplification. We added some support for differentiation
+                  and the functions sin, cos, tan, exp, and ln. Pretty-printing doesn’t print as many unneeded
+                  parenthesis. Both textual representation of expressions and LATEX output exists. Develop additional
+                  test cases. Improve the basic parser and lexer using OCamlyacc, Menhir, OCamllex, and examples given
+                  as part of the course. Confirm that the parser and lexer work for simple and intermediate cases.
+                  Implement and test differentiation code. Implement and test new unops such as sin, cos, tan, exp, and
+                  ln. Overhaul functions to do numerical operations, remove redundant zeros, and add like terms to
+                  remove bugs and improve readability. Develop functions to determine what variables a function is
+                  dependent upon. Develop test cases for above functions. Write script for the demo and help develop
+                  example cases</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src=https://adamsbrianna.github.io/v1/js/jquery.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/bootstrap.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/jquery.cookie.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/ekko-lightbox.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/jquery.scrollTo.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/masonry.pkgd.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/imagesloaded.pkgd.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/owl.carousel.min.js></script>
+  <script src=https://adamsbrianna.github.io/v1/js/front.js></script>
 </body>
+
 </html>
