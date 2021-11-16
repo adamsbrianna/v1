@@ -1,7 +1,7 @@
 +++
 image = "img/portfolio/pollack.png"
 showonlyimage = false
-date = "2016-11-05T19:57:40+05:30"
+date = "2021-11-05T19:57:40+05:30"
 title = "Gold Hunting"
 draft = false
 weight = 11
