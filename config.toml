@@ -13,7 +13,7 @@ googleAnalytics = ""
   # Use custom.css for your custom styling
   style = "blue"
   description = "Describe your website"
-  copyright = "&copy;2021 Brianna Adams"
+  copyright = "&copy;2021 Brianna Adams | Made with ❤️ Hugo"
   sidebarAbout = [
     "Hi there! I am a software engineer and creative pursing my undergraduate degree.",
     "Originally from Virginia, currently based in Ithaca."
