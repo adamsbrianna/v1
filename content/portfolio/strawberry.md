@@ -8,3 +8,10 @@ weight = 5
 +++
 
 7 x 6" Medium: Watercolor
+
+{{< rawhtml >}} 
+
+<img src="/img/portfolio/strawberry.jpg" 
+     style="max-width: 150%;" />
+
+{{< /rawhtml >}}
