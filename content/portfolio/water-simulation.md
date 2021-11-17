@@ -29,7 +29,7 @@ There are three tasks:
     to evaluate the performance with varying numbers of processors and 
     problem sizes.
 
-    Profiling and tuning: Look for bottlenecks in the code to optimize the simulation even further.
+    Profiling and tuning: Look for bottlenecks in the code to optimize the simulation further.
 {{< rawhtml >}} 
 <br>
 {{< /rawhtml >}}
