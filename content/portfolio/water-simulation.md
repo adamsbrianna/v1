@@ -25,7 +25,9 @@ There are three tasks:
 
     Parallelization: parallelize code using OpenMP.
 
-    Scaling study: Run strong and weak scaling studies analyses on Comet to evaluate the performance with varying numbers of processors and problem sizes.
+    Scaling study: Run strong and weak scaling studies analyses on Comet
+    to evaluate the performance with varying numbers of processors and 
+    problem sizes.
 
     Profiling and tuning: Look for bottlenecks in the code to optimize the simulation even further.
 {{< rawhtml >}} 

@@ -25,7 +25,7 @@ Teaching DoS attacks, DDos attacks, simple DoS mitigation, and spoofing.
 <p> &nbsp; </p>
 {{< /rawhtml >}}
 
-Simulation of x attack above and x attack below.
+[comment]: <> (Simulation of x attack above and x attack below.)
 
 {{< rawhtml >}} 
 <p> &nbsp; </p>
