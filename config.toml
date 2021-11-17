@@ -15,7 +15,7 @@ googleAnalytics = ""
   description = "Describe your website"
   copyright = "&copy;2021 Brianna Adams | Made with ❤️ Hugo"
   sidebarAbout = [
-    "Hi there! I am a software engineer and creative pursing my undergraduate degree.",
+    "Hi there! I am a software engineer and creative pursuing my undergraduate degree.",
     "Originally from Virginia, currently based in Ithaca."
   ]
   # Contact page
